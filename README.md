@@ -1,1 +1,1 @@
-# GameStoreG
+# GamePlex

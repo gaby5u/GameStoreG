@@ -1,4 +1,4 @@
-import { games } from "./../object.js";
+import { games } from "../object.js";
 
 const cartGames = JSON.parse(localStorage.getItem("gamesToCart")) || [];
 const longOrangeButton = document.querySelector("#long-orange-button");

@@ -1,6 +1,6 @@
 // -------------------------individual-game---favorites-----------------------------
 
-import { games } from "../object.js";
+import { games } from "object.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   updateFavoriteIcons();

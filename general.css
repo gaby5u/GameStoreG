@@ -283,7 +283,7 @@ a {
 }
 
 .white-circle div {
-  background-image: url(../img-general/icons/stroke-heart.png);
+  background-image: url(img-general/icons/stroke-heart.png);
   background-repeat: no-repeat;
   width: 28px;
   height: 25px;
@@ -292,11 +292,11 @@ a {
 
 .white-circle div:hover {
   transition: all 0.4s;
-  background-image: url(../img-general/icons/full-heart.png);
+  background-image: url(img-general/icons/full-heart.png);
 }
 
 .white-circle div.toggled {
-  background-image: url(../img-general/icons/full-heart.png);
+  background-image: url(img-general/icons/full-heart.png);
 }
 
 /* ----------------------------------------------input-------------------------------------- */

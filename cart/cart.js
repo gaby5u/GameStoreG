@@ -1,4 +1,4 @@
-import { games } from "./../object.js";
+import { games } from "../object.js";
 
 let cartGames = JSON.parse(localStorage.getItem("gamesToCart")) || [];
 

@@ -18,7 +18,7 @@ const setGameData = () => {
         gameFinalPrice[index].textContent = game.finalPrice;
         gameImage[index].setAttribute(
           "src",
-          `all-games-h-images${game.image1}`
+          `./all-games-h-images${game.image1}`
         );
       }
     });

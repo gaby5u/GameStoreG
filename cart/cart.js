@@ -29,7 +29,10 @@ const createCard = (gameId) => {
   productContent.appendChild(selectContainer);
 
   const image = document.createElement("img");
-  image.setAttribute("src", games[gameId - 1].image);
+  image.setAttribute(
+    "src",
+    `../categories/all-games-h-images/${games[gameId - 1].image}`
+  );
   image.setAttribute("alt", games[gameId - 1].alt);
   image.classList.add("game-image");
   productContent.appendChild(image);

@@ -1587,7 +1587,7 @@ export const games = [
   },
   {
     id: 81,
-    name: "Phasmophobiao",
+    name: "Phasmophobia",
     initialPrice: 7.99,
     finalPrice: 5.99,
     rating: 4.9,
@@ -1601,8 +1601,8 @@ export const games = [
     releaseDate: "18 Sep, 2020",
     developer: "Kinetic Games",
     image: "../img-general/games-images/phasmophobia.webp",
-    image1: "all-games-h-images/phasmophobiao.avif",
-    alt: "phasmophobiao",
+    image1: "all-games-h-images/phasmophobia.avif",
+    alt: "phasmophobia",
   },
   {
     id: 82,

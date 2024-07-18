@@ -72,10 +72,7 @@ const displayFilteredGames = (filteredGames) => {
 
       const gameImage = document.createElement("img");
       gameImage.className = "game-image";
-      gameImage.setAttribute(
-        "src",
-        `../categories/all-games-h-images/${game.image1}`
-      );
+      gameImage.setAttribute("src", `../categories/${game.image1}`);
 
       const textDescription = document.createElement("div");
       textDescription.className = "text-description";

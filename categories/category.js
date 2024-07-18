@@ -16,10 +16,8 @@ const setGameData = () => {
         gameDescription[index].textContent = game.description1;
         gameInitialPrice[index].textContent = game.initialPrice;
         gameFinalPrice[index].textContent = game.finalPrice;
-        gameImage[index].setAttribute(
-          "src",
-          `./all-games-h-images${game.image1}`
-        );
+        gameImage[index].setAttribute("src", `./${game.image1}`);
+        gameImage[index].setAttribute("alt", game.alt);
       }
     });
   });

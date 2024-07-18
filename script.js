@@ -35,7 +35,7 @@ closeButton.addEventListener("click", menuToggle);
 const searchBar = document.querySelector(".input-container input");
 const magnifyingGlass = document.querySelector(".input-container img");
 let searchTerm = "";
-const newUrl = `/GameStoreG/searched-results/searched-results.html`;
+const newUrl = `/searched-results/searched-results.html`;
 
 searchBar.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {

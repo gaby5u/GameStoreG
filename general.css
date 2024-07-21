@@ -73,13 +73,8 @@ a {
 
 .close-button-menu-toggle {
   display: none;
-  width: 20px;
-  height: 20px;
-  background-image: url(https://i.postimg.cc/yNcK65Gc/close.png);
-  cursor: pointer;
-  background-size: 25px;
-  background-repeat: no-repeat;
-  background-position: center;
+  width: 36px;
+  height: 36px;
 }
 
 .logo {

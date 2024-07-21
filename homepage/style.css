@@ -582,9 +582,6 @@
 }
 
 @media screen and (max-width: 1889px) {
-  .latest-games-section {
-    background-image: url(img/background-img-latest-games-1.png);
-  }
   .game-carousel {
     width: auto;
   }
@@ -654,9 +651,6 @@
   .popular-game,
   .popular-game img {
     width: auto;
-  }
-  .home-first-section {
-    background-image: url(img/background-img-1.png);
   }
   .list-carousel,
   .list-games-carousel {

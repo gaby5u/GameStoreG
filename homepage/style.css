@@ -1,8 +1,9 @@
 .home-first-section {
   background-image: url(img/background-img.png);
-  height: 115vh;
+  height: 1050px;
   position: relative;
   background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .home-content-container {
@@ -10,7 +11,7 @@
   margin: 9rem 12.3%;
   align-items: center;
   justify-content: space-between;
-  gap: 400px;
+  gap: 10%;
 }
 
 .play-earn-enjoy-container {
@@ -28,9 +29,9 @@
 
 .main-text h1 {
   font-family: "Chakra Petch", sans-serif;
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 700;
-  width: 25rem;
+  max-width: 25rem;
   margin: 1rem 0;
 }
 
@@ -295,6 +296,7 @@
 .latest-games-section {
   background-image: url(img/background-img-latest-games.png);
   background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .list-carousel,
@@ -364,7 +366,7 @@
   padding: 0.5rem;
   border-radius: 10px;
   cursor: pointer;
-  gap: 20px;
+  gap: 1rem;
   width: 25rem;
 }
 
@@ -376,8 +378,7 @@
 .game-carousel img {
   object-fit: cover;
   border-radius: 10px;
-  width: 182px;
-  height: 118px;
+  width: 13rem;
 }
 
 .game-carousel h2 {
@@ -465,7 +466,6 @@
 
 .popular-games-container {
   gap: 20px;
-  flex-wrap: wrap;
   margin-top: 3rem;
 }
 
@@ -479,7 +479,7 @@
 }
 
 .popular-game img {
-  max-width: 22rem;
+  max-width: 25rem;
 }
 
 .popular-game:hover {
@@ -551,12 +551,17 @@
   background-color: var(--secondary-black);
   border: 1px solid #444642;
   border-radius: 1.5rem;
-  padding: 50px;
+  padding: 40px;
   font-family: "Poppins", sans-serif;
 }
 
 .testimonial-person {
   margin-top: 40px;
+  gap: 1rem;
+}
+
+.testimonial-person img {
+  width: 4rem;
 }
 
 .testimonial-person div:first-child,
@@ -576,33 +581,21 @@
   margin: 5px 0;
 }
 
-.testimonial-person img:last-child {
-  width: 3.5rem;
-  height: auto;
-}
-
 @media screen and (max-width: 1889px) {
-  .home-first-section {
-    background-image: url(img/background-img-1.png);
-  }
-  .list-carousel,
-  .list-games-carousel {
-    flex-wrap: wrap;
-  }
-  .list-games-carousel {
-    flex-direction: row;
-  }
   .latest-games-section {
     background-image: url(img/background-img-latest-games-1.png);
+  }
+  .game-carousel {
+    width: auto;
   }
 }
 
 @media screen and (max-width: 1820px) {
   .home-first-section {
-    background-image: url(img/background-img-2.png);
+    background-image: url(img/background-img-1.png);
   }
   .main-character-img-home {
-    left: 53%;
+    left: 50%;
   }
   .home-content-container {
     margin: 6rem 12%;
@@ -613,12 +606,21 @@
   .testimonial {
     width: auto;
   }
+  .popular-games-container {
+    flex-wrap: wrap;
+  }
+  .padding-content-popular-games {
+    margin: 0 10%;
+  }
 }
 
 @media screen and (max-width: 1600px) {
   .grid-categories {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
+  }
+  .game-carousel h2 {
+    display: none;
   }
 }
 
@@ -633,15 +635,11 @@
   .main-character-img-home {
     display: none;
   }
-  .home-content-container {
-    flex-wrap: wrap;
-    gap: 50px;
-  }
   .slider-container {
     top: 0;
   }
   .slider {
-    width: 25.8rem;
+    width: 45rem;
   }
   .carousel-rotate-section {
     height: 600px;
@@ -650,18 +648,24 @@
     background-image: none;
   }
   .selected-image {
-    width: 39rem;
+    width: 100%;
     height: auto;
-  }
-  .game-carousel {
-    width: auto;
-  }
-  .game-carousel h2 {
-    display: none;
   }
   .popular-game,
   .popular-game img {
     width: auto;
+  }
+  .home-first-section {
+    background-image: url(img/background-img-1.png);
+  }
+  .list-carousel,
+  .list-games-carousel {
+    flex-wrap: wrap;
+  }
+  .list-games-carousel {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -669,6 +673,14 @@
   .grid-categories {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
+  }
+  .home-content-container {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  .top-rated-container {
+    max-width: none;
+    width: 100%;
   }
 }
 
@@ -688,7 +700,7 @@
   .testimonial p,
   .person-name-passion-container h4,
   .info-popular-game p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   /* 20px */
 
@@ -728,8 +740,40 @@
   .game-category img {
     width: 220px;
   }
-  .popular-game,
-  .popular-game-img {
-    min-width: 25rem;
+  .slider {
+    width: 25.8rem;
+  }
+  .title-button-popular-games {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .grid-categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .game-category img,
+  .game-category,
+  .grid-categories {
+    width: 100%;
+  }
+  .popular-game img {
+    width: 16rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hi-next,
+  .hi-prev {
+    display: none;
+  }
+  .info-container p {
+    margin: 0;
+  }
+  .game-carousel img {
+    width: 10rem;
   }
 }

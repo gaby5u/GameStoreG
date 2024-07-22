@@ -2,7 +2,7 @@ import { games } from "../object.js";
 
 let gamesContainer = document.querySelector(".games-container");
 const searchBar = document.querySelector(".input-container input");
-const magnifyingGlass = document.querySelector(".input-container img");
+const magnifyingGlass = document.querySelector(".input-container svg");
 const errorMessage = document.querySelector(".error-message");
 let searchTerm = "";
 

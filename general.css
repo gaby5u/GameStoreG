@@ -280,11 +280,6 @@ a {
   cursor: pointer;
 }
 
-.white-circle div:hover {
-  transition: all 0.4s;
-  background-image: url(img-general/icons/full-heart.png);
-}
-
 .white-circle div.toggled {
   background-image: url(img-general/icons/full-heart.png);
 }
@@ -508,9 +503,6 @@ a {
   .orange-button {
     font-size: 1.5rem;
   }
-  .input-container {
-    display: none;
-  }
   .logo {
     margin: 2rem 0;
   }
@@ -523,5 +515,24 @@ a {
   }
   .text-logo {
     display: none;
+  }
+  .logo {
+    gap: 1rem;
+  }
+  .logo svg {
+    width: 32px;
+    height: 32px;
+  }
+  .input-container input {
+    height: 30px;
+    width: 8rem;
+    padding: 0 1rem;
+    padding-right: 20px;
+    font-size: 1rem;
+  }
+  .input-container svg {
+    width: 10px;
+    height: 10px;
+    right: 10px;
   }
 }

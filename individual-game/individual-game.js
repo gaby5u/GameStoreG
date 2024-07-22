@@ -18,8 +18,12 @@ const changeGameData = (gameId) => {
     document.querySelector(".description-2").textContent = game.description2;
     document.querySelector(".release-date").textContent = game.releaseDate;
     document.querySelector(".developer").textContent = game.developer;
-    document.querySelector(".genre").textContent = game.genre;
-    document.querySelector(".tags").textContent = game.tags;
+    game.genre.forEach((genre) => {
+      document.querySelector(".genre").textContent += genre + " ";
+    });
+    game.tags.forEach((tag) => {
+      document.querySelector(".tags").textContent += tag + " ";
+    });
   }
 };
 

@@ -29,6 +29,10 @@
   justify-content: space-between;
 }
 
+.summary-container {
+  width: auto;
+}
+
 .select-container,
 .remove-container,
 .product-content,
@@ -129,10 +133,11 @@
 .promo-code-container {
   justify-content: space-between;
   display: none;
+  gap: 1rem;
 }
 
 .promo-code-container input {
-  padding: 0.5rem;
+  padding: 0.8rem;
   color: var(--font-color);
   border: 1px solid #444642;
   font-size: 1rem;
@@ -185,6 +190,7 @@
 .banking-img {
   gap: 1.5rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .payment p {

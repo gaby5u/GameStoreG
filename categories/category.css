@@ -13,7 +13,7 @@
 
 .game-container {
   position: relative;
-  width: 31rem;
+  width: 29rem;
   background-color: var(--secondary-black);
   border: 1px solid #444642;
   font-family: "Poppins", sans-serif;

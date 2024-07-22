@@ -535,7 +535,7 @@
   transition: all 0.5s;
 }
 
-.arrow-button:hover img {
+.arrow-button:hover svg {
   transform: rotate(-45deg);
   transition: all 0.5s;
 }

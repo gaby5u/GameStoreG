@@ -151,12 +151,7 @@ video {
   color: var(--primary-orange);
 }
 
-.button-arrow a img {
-  width: 29px;
-  height: 24px;
-}
-
-.button-arrow:hover img {
+.button-arrow:hover svg {
   transition: all 0.4s;
   transform: translateX(8px);
 }
@@ -374,7 +369,7 @@ video {
   .possabilities-text,
   .features-container p,
   .feature-container h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   /* 20px */
 
@@ -388,5 +383,17 @@ video {
   .point-text p,
   .available-on-text {
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  video,
+  .possabilities-image {
+    width: 24rem;
+  }
+  .slider,
+  .slider img {
+    width: 26rem;
+    height: 40rem;
   }
 }
